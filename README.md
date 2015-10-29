@@ -2,14 +2,14 @@
 
 During this exercise, you'll apply your knowledge of object-oriented programming (OOP) and prototypal inheritance. 
 
-Your goal is to re-create a zoo full of animals. Yes, you read that correctly: You're creating a zoo! You're going to one-up Matt Damon, whom just bought a zoo, :
+Your goal is to re-create a zoo full of animals. Yes, you read that correctly: You're creating a zoo! You're going to one-up Matt Damon, whom just bought a zoo:
 
 ![We Bought a Zoo](./images/we-bought-a-zoo.jpg)
 
 We're actually going to create a zoo and add animals to it.
 
 # Instructions
-To make your zoo successful, you'll first need to fork and clone this repository. Then you'll need to create two constructors:
+To make your zoo successful, you'll need to first fork and clone this repository. Then you'll need to create two constructors:
 
 - `Animal`
 - `Zoo`
@@ -50,4 +50,4 @@ An instance of this constructor should have the following properties and methods
 - `removeAnimal`: ONLY if the zoo is open, removes an animal from `animals`. 
 
 # Submission
-When you're done, copy the URL to your forked repository and paste it into the LMS (learning management system).
+When you're done, copy the URL of your forked repository and paste it into the LMS (learning management system).
