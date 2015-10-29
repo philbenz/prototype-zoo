@@ -25,7 +25,7 @@ An instance of this constructor should have the following properties and methods
 - `speak`: has a string as a value (e.g., a pig would return "oink!")
 
 ### methods
-- `growUp()`: adds one year to animal's age
+- `growUp()`: adds one year to animal's `age`
 - `feed()`: if the animal is awake, return's the string `"NOM NOM NOM"`
 - `wakeUp()`: changes `awake` to `true`
 - `sleep()`: changes `awake` to `false`
@@ -42,10 +42,10 @@ An instance of this constructor should have the following properties and methods
 ### methods
 - `changeLocation()`: updates value of `location`
 - `open()`: updates value of `status` to `"open"`
-- `open()`: updates value of `status` to `"closed"`
+- `close()`: updates value of `status` to `"closed"`
 - `isOpen()`: returns a `Boolean` value.
-- `addAnimal`: ONLY if the zoo is open and the kind of animal is not already in the zoo, adds an animal to `animals`. 
-- `removeAnimal`: ONLY if the zoo is open, removes an animal from `animals`. 
+- `addAnimal()`: ONLY if the zoo is open and the kind of animal is not already in the zoo, adds an animal to `animals`. 
+- `removeAnimal()`: ONLY if the zoo is open, removes an animal from `animals`. 
 
 # Submission
 When you're done, copy the URL of your forked repository and paste it into the LMS (learning management system).
