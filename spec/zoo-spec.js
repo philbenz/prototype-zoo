@@ -1,15 +1,17 @@
 var Animal = require('../src/animal.js'),
-Zoo = require('../src/zoo.js'),
-animal,
-zoo;
+    Zoo    = require('../src/zoo.js');
+
+var animal = null,
+    zoo    = null;
 
 describe('Zoo', function(){
 
   beforeEach(function(){
+
     // create a new zoo object each time
-    zoo = new Zoo("Bronx","NYC");
-    pig = new Animal("Babe",10,"Pig");
-    lion = new Animal("Snoop",10,"lion");
+    var zoo  = new Zoo("Bronx","NYC");
+    var pig  = new Animal("Babe",10,"Pig");
+    var lion = new Animal("Snoop",10,"lion");
   });
 
   describe('#changeLocation', function(){
@@ -64,5 +66,3 @@ describe('Zoo', function(){
     });
   });
 });
-
-

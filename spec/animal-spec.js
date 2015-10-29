@@ -1,5 +1,6 @@
 var Animal = require('../src/animal.js');
-var animal;
+
+var animal = null;
 
 describe('Animal', function(){
 
@@ -8,7 +9,7 @@ describe('Animal', function(){
     animal = new Animal("Fido", 27, "Pig");
   });
 
-  describe('#oink', function(){
+  describe('#speak', function(){
     it('should oink if it is a pig', function(){
 
     });
