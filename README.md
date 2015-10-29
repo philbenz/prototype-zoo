@@ -16,7 +16,7 @@ Fork and clone this repository to here:
 ~/workspace
 ```
 
-(If `workspace` doesn't exist, create it: 
+If `workspace` doesn't exist, create it: 
 
 
 ```javascript
