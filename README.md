@@ -27,8 +27,8 @@ An instance of this constructor should have the following properties and methods
 ### methods
 - `growUp()`: adds one year to animal's age
 - `feed()`: if the animal is awake, return's the string `"NOM NOM NOM"`
-- wakeUp(): changes `awake` to `true`
-- sleep(): changes `awake` to `false`
+- `wakeUp()`: changes `awake` to `true`
+- `sleep()`: changes `awake` to `false`
 
 ## `Zoo`
 An instance of this constructor should have the following properties and methods:
