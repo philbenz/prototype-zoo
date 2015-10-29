@@ -2,7 +2,7 @@
 
 During this exercise, you'll apply your knowledge of object-oriented programming (OOP) and prototypal inheritance. 
 
-Your goal is to re-create a zoo full of animals. Yes, you read that correctly: You're creating a zoo! You're going to one-up Matt Damon, whom just bought a zoo:
+Your goal is to re-create a zoo full of animals. Yes, you read that correctly--you're creating a zoo! You're going to one-up Matt Damon, whom just bought a zoo:
 
 ![We Bought a Zoo](./images/we-bought-a-zoo.jpg)
 
