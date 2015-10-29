@@ -1,13 +1,29 @@
-// do not remove this line...you're going to need it for your addAnimal method
-var Animal = require("./animal");
+/**
+ * Do not remove the comments on lines 6, 7, 
+ * and 29. Some cohorts will require them.
+ */ 
 
-function Zoo(name, location){
-  this.name = name;
-  this.location = location;
+// do not remove this line...you're going to need it for your addAnimal method
+// var Animal = require("./animal");
+
+
+function Zoo() {
+ // write code here
 }
 
-Zoo.prototype.changeLocation = function(newLocation){
 
-};
+Zoo.prototype // write more code here
 
-module.exports=Zoo;
+
+
+
+
+
+
+
+
+
+
+
+
+// module.exports=Zoo;
