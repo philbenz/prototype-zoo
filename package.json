@@ -1,7 +1,7 @@
 {
-  "name": "apartment_lab",
-  "version": "0.0.1",
-  "description": "a lab for playing with constructors and prototypes in JS",
+  "name": "js_oop_exercise",
+  "version": "0.1.0",
+  "description": "An exercise for prototypal inheritance with JavaScript",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -9,7 +9,7 @@
   "scripts": {
     "test": "jasmine spec/animalSpec.js"
   },
-  "author": "",
+  "author": "Team Galvanize",
   "license": "ISC",
   "dependencies": {
   }
