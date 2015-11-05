@@ -1,4 +1,4 @@
-# The Prototype Zoo
+# prototype-zoo
 
 During this exercise, you'll apply your knowledge of object-oriented programming (OOP) and prototypal inheritance. 
 
