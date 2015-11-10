@@ -1,4 +1,4 @@
-# prototype-zoo-half-lab
+# prototype-zoo
 
 During this exercise, you'll apply your knowledge of object-oriented programming (OOP) and prototypal inheritance. 
 

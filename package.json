@@ -1,11 +1,11 @@
 {
-  "name": "prototype-zoo-half-day",
-  "description": "A half-day lab on inheritance.",
+  "name": "prototype-zoo",
+  "description": "A lab on inheritance with JavaScript.",
   "version": "0.1.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gSchool/prototype-zoo-half-day"
+    "url": "https://github.com/gSchool/prototype-zoo"
   },
   "keywords": [
     "javascript",
