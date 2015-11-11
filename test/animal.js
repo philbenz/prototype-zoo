@@ -6,23 +6,23 @@ describe('Animal', function(){
 
   describe('properties', function(){
 
-    animal = new Animal('lion', 'roar', 'Simba', 3);
+    var animal = new Animal('lion', 'roar', 'Simba', 3);
     
     describe('kind', function(){
       it('should have a kind', function(){
-        assert.equal(animal.kind, "lion");
+        assert.equal(animal.kind, 'lion');
       });
     });
 
     describe('sound', function(){
       it('should have a sound', function(){
-        assert.equal(animal.sound, "roar");
+        assert.equal(animal.sound, 'roar');
       });
     });
 
     describe('name', function(){
       it('should have a name', function(){
-        assert.equal(animal.name, "Simba");
+        assert.equal(animal.name, 'Simba');
       });
     });
 
@@ -43,8 +43,8 @@ describe('Animal', function(){
   describe('methods', function(){
 
     beforeEach(function() {
-      var lion = new Animal('lion', 'roar', 'Simba', 3);
-      var pig  = new Animal('pig', 'oink', 'Porky', 2);
+      lion = new Animal('lion', 'roar', 'Simba', 3);
+      pig  = new Animal('pig', 'oink', 'Porky', 2);
     });
 
     afterEach(function() {
@@ -75,16 +75,21 @@ describe('Animal', function(){
     describe('#feed()', function(){
       it('should return "NOM NOM NOM" if awake', function(){
         pig.wakeUp();
-
-        assert.equal(lion.feed(), undefined);
-        assert.equal(pig.feed(), 'Nom Nom Nom');
+        var lionFed = lion.feed();
+        var pigFed = pig.feed();
+        
+        assert.equal(lionFed, undefined);
+        assert.equal(pigFed, 'NOM NOM NOM');
       });
     });
 
     describe('#growUp()', function(){
       it('should increment age by one', function(){
-        assert.equal(lion.growUp(), 4);
-        assert.equal(pig.growUp(), 3);
+        lion.growUp();
+        pig.growUp();
+
+        assert.equal(lion.age, 4);
+        assert.equal(pig.age, 3);
       });
     });
 

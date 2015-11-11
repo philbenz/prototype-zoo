@@ -1,4 +1,4 @@
-var Animal = require("./animal");
+var Animal = require('./animal');
 
 function Zoo() {
  // write code here

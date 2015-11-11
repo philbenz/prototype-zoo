@@ -7,8 +7,8 @@ describe('Zoo', function(){
 
   describe('properties', function(){
 
-    var zoo = new Zoo('Tokyo', 'Ueno');
-    
+    var zoo = new Zoo('Tokyo', 'Ueno');    
+
     describe('location', function(){
       it('should have a location', function(){
         assert.equal(zoo.location, 'Tokyo');
@@ -42,9 +42,9 @@ describe('Zoo', function(){
   describe('methods', function(){
 
     beforeEach(function() {
-      var zoo  = new Zoo('Tokyo', 'Ueno');
-      var lion = new Animal('lion', 'roar', 'Simba', 3);
-      var pig  = new Animal('pig', 'oink', 'Porky', 2);
+      zoo  = new Zoo('Tokyo', 'Ueno');
+      lion = new Animal('lion', 'roar', 'Simba', 3);
+      pig  = new Animal('pig', 'oink', 'Porky', 2);
     });
 
     afterEach(function() {
@@ -61,7 +61,9 @@ describe('Zoo', function(){
 
     describe('#open()', function(){
       it('should change status to open', function(){
-        assert.equal(zoo.open(), true);
+        zoo.open();
+
+        assert.equal(zoo.status, 'open');
       });
     });
 
@@ -75,6 +77,7 @@ describe('Zoo', function(){
       it('should add an animal to animals if zoo is open', function(){
         zoo.open();
         zoo.addAnimal(lion);
+
 
         assert.equal(zoo.animals.length, 1);
         assert.equal(zoo.animals[0].kind, 'lion');
@@ -91,7 +94,7 @@ describe('Zoo', function(){
       it('should not add instances of non-animals', function(){
         zoo.open();
         zoo.addAnimal('pineapple');
-
+        
         assert.equal(zoo.animals.length, 0);
       });
 
@@ -110,8 +113,10 @@ describe('Zoo', function(){
         zoo.addAnimal(lion);
         zoo.addAnimal(pig);
         zoo.close();
+        
+        zoo.removeAnimal('lion');
 
-        assert.equal(zoo.remove('lion').length, 2);
+        assert.equal(zoo.animals.length, 2);
       });
       
       it('should remove an animal in animals if zoo is open', function(){
@@ -119,13 +124,17 @@ describe('Zoo', function(){
         zoo.addAnimal(lion);
         zoo.addAnimal(pig);
 
-        assert.equal(zoo.remove('lion').length, 1);
+        zoo.removeAnimal('lion');
+
+        assert.equal(zoo.animals.length, 1);
         assert.equal(zoo.animals[0].kind, 'pig');
       });
     });
     
     describe('#changeLocation(location)', function(){
       it('should change location of a zoo', function(){
+        zoo.changeLocation('Berlin');
+
         assert.equal(zoo.location, 'Berlin');
       });
     });
