@@ -7,9 +7,9 @@ Your goal is to create a zoo and add animals to it. Yes, you read that correctly
 ![We Bought a Zoo](./images/we-bought-a-zoo.jpg)
 
 # Instructions
-To make your zoo successful, you'll need to follow the following three steps: 
+To make your zoo successful, you'll need to follow these five steps: 
 
-## Step 1 of 3: Fork and Clone
+### 1 of 5: Fork and Clone
 Fork and clone this repository to here: 
 
 ```javascript
@@ -23,13 +23,27 @@ If `workspace` doesn't exist, create it:
 mkdir ~/workspace
 ``` 
 
-## Step 2 of 3: Create Your Constructors
-You'll need to create two constructors:
+### 2 of 5: Download npm Packages
+This repository contains external libraries, which will enables us to include a test suite. You'll need to navigate to your cloned repository and type the following command:
+
+  ```javascript
+  npm install
+  ```
+
+### 3 of 5: Run Tests
+After all packages have been downloaded, type the following command to run your tests:
+
+```javascript
+npm test
+```
+
+## Step 4 of 5: Make Tests Pass
+To make the tests pass, you'll need to write the code for the following two constructors:
 
 - `Animal`
 - `Zoo`
 
-Place your code for each constructor in its appropriate file in `./src/`.
+You'll find a file for each constructor in `javascript/animal.js` and `javascript/animal.js`.
 
 ### `Animal`
 An instance of this constructor should have the following properties and methods:
@@ -65,5 +79,5 @@ An instance of this constructor should have the following properties and methods
 - `changeLocation()`: updates value of `location`
 - `close()`: updates value of `status` to `"closed"`
 
-# Step 3 of 3: Submission
+# Step 5 of 5: Submission
 When you're done, push your work to your forked repository. Then copy the URL of your forked repository and paste it into the LMS (learning management system).
