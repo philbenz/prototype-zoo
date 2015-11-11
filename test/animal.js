@@ -84,23 +84,15 @@ describe('Animal', function(){
     });
 
     describe('#growUp()', function(){
-      it('should increment age by one', function(){
-        lion.growUp();
-        pig.growUp();
-
-        assert.equal(lion.age, 4);
-        assert.equal(pig.age, 3);
+      xit('should increment age by one', function(){
+        // write an assertion for what's
+        // being described on line 87
       });
     });
 
-    describe('#sleep()', function(){
-      it('should change state of awake to false', function(){
-        lion.sleep();
-        pig.sleep();
-
-        assert.equal(lion.awake, false);
-        assert.equal(pig.awake, false);
-      });
+    xdescribe('#sleep()', function(){
+      // write the `it`block and assertion
+      // that changes `awake` to `false`. 
     });
 
   }); // methods

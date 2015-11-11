@@ -98,12 +98,9 @@ describe('Zoo', function(){
         assert.equal(zoo.animals.length, 0);
       });
 
-      it('should not add duplicates', function(){
-        zoo.open();
-        zoo.addAnimal(pig);
-        zoo.addAnimal(pig);
-
-        assert.equal(zoo.animals.length, 1);
+      xit('should not add duplicates', function(){
+        // write an assertion for what's 
+        // being described on line 101
       });
     });
     
@@ -119,33 +116,22 @@ describe('Zoo', function(){
         assert.equal(zoo.animals.length, 2);
       });
       
-      it('should remove an animal in animals if zoo is open', function(){
-        zoo.open();
-        zoo.addAnimal(lion);
-        zoo.addAnimal(pig);
-
-        zoo.removeAnimal('lion');
-
-        assert.equal(zoo.animals.length, 1);
-        assert.equal(zoo.animals[0].kind, 'pig');
+      xit('should remove an animal in animals if zoo is open', function(){
+        // write an assertion for 
+        // what's being described on line 122
       });
     });
     
     describe('#changeLocation(location)', function(){
-      it('should change location of a zoo', function(){
-        zoo.changeLocation('Berlin');
-
-        assert.equal(zoo.location, 'Berlin');
+      xit('should change location of a zoo', function(){
+        // write an assertion for what's 
+        // being described on line 135
       });
     });
     
-    describe('#close()', function(){
-      it('should change status to open', function(){
-        zoo.status = 'open';
-        zoo.close();
-        
-        assert.equal(zoo.status, 'closed');
-      });
+    xdescribe('#close()', function(){
+      // write the `it`block and assertion
+      // that changes a zoo's `status` to "closed". 
     });
 
   }); // methods
