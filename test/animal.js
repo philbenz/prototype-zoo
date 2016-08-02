@@ -93,7 +93,7 @@ describe('Animal', function(){
       // write the `it`block and assertion
       // that changes `awake` to `false`.
       it('should change animals awake to false', function(){
-        assert.equal(lion.awake());
+        assert.equal(lion.sleep(), false);
       });
     });
 

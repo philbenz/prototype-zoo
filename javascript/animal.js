@@ -9,7 +9,7 @@ function Animal(kind, sound, name, age, awake){
 }
 
 Animal.prototype.wakeUp = function (){
-  this.awake = true;
+  return(this.awake = true);
 }
 
 Animal.prototype.speak = function (){
@@ -26,6 +26,9 @@ Animal.prototype.growUp = function (){
   return (this.age = this.age + 1);
 }
 
+Animal.prototype.sleep = function (){
+  return(this.awake = false);
+}
 
 
 module.exports = Animal;
