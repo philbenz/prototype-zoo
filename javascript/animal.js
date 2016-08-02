@@ -1,19 +1,4 @@
 function Animal(kind, sound, name, age, awake){
-  // write code here
-
-
-  // kind: has a string as a value--e.g., lion"
-  // sound: has a string as a value--e.g., "roar"
-  // name: has a string as a value
-  // age: has an integer as a value
-  // awake: has a Boolean value, and the default is false
-  // methods
-  //
-  // wakeUp(): changes awake to true
-  // speak(): has a string as a value (e.g., a pig would return "oink!")
-  // feed(): if the animal is awake, return's the string "NOM NOM NOM"
-  // growUp(): adds one year to animal's age
-  // sleep(): changes awake to false
 
   this.kind = kind;
   this.sound = sound;
